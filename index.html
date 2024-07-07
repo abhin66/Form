@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,7 +28,7 @@
 <body>
     <div class="main-section">
         <div class="container-xl">
-            <div class="main-content row gap-3">
+            <div class="main-content row gap-3 pt-5 pb-5">
                 <div class="page bg-white col border-radius px-4 py-4">
                     <h1 class="txt-bold">Basic Details</h1>
                     <form class="d-flex flex-column pt-3">
@@ -50,24 +51,169 @@
                                 </select>
                             </div>
                             <div class="col">
-                            <label for="basic-url" class="form-label txt-sm">First Name</label>
-                            <div class="input-group mb-3">
-                                <input type="text" placeholder="john" class="form-control rounded-4" id="basic-url"
-                                    aria-describedby="basic-addon3" />
-                            </div>
-                            </div>
-                            <div class="col">
-                                <label for="basic-url" class="form-label txt-sm">Last Name</label>
+                                <label for="basic-url" class="form-label txt-sm">First Name</label>
                                 <div class="input-group mb-3">
-                                    <input type="text" placeholder="Doe" class="form-control rounded-4" id="basic-url"
+                                    <input type="text" placeholder="john" class="form-control rounded-4" id="basic-url"
                                         aria-describedby="basic-addon3" />
                                 </div>
+                            </div>
+                            <div class="col">
+                                <label for="name" class="form-label txt-sm">Last Name</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" placeholder="Doe" class="form-control rounded-4" id="name"
+                                        aria-describedby="basic-addon3" />
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col">
+                                <label for="exampleInputEmail1" class="form-label txt-sm">Email address</label>
+                                <input type="email" placeholder="mail@simmmple.com  " class="form-control rounded-4"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col">
+                                <label for="url" class="form-label txt-sm">Mobile Number</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" placeholder="Mobile" class="form-control rounded-4"
+                                        id="url" aria-describedby="basic-addon3" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                            <label id="datepicker" class="txt-sm">Date of birth</label> 
+                            <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                                <input class="form-control rounded-4" type="date" />
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> </span>
+                            </div>
+                            </div>
+                            <div class="col row">
+                                <label>Gender</label>
+                                <div class="d-flex">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">    
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                                  </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                                <label for="address" class="form-label txt-sm">Address</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" placeholder="enter address" class="form-control rounded-4"
+                                        id="address" aria-describedby="basic-addon3" />
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="txt-sm">Country</label>
+                                <select class="form-select rounded-4" aria-label="Default select example">
+                                    <option selected>select</option>
+                                    <option value="1">Country-A</option>
+                                    <option value="2">Country-B</option>
+                                    <option value="3">Country-C</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label class="txt-sm">State</label>
+                                <select class="form-select rounded-4" aria-label="Default select example">
+                                    <option selected>select</option>
+                                    <option value="1">State-A</option>
+                                    <option value="2">State-B</option>
+                                    <option value="3">State-C</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <label for="place" class="form-label txt-sm">City</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" placeholder="enter city" class="form-control rounded-4"
+                                        id="place" aria-describedby="basic-addon3" />
+                                </div>
+                        </div>
+                        <div class="col">
+                            <label for="code" class="form-label txt-sm">Pin/Zip</label>
+                            <div class="input-group mb-3">
+                                <input type="text" placeholder="enter pin/zip" class="form-control rounded-4"
+                                    id="code" aria-describedby="basic-addon3" />
+                            </div>
+                        </div>
                         </div>
                     </form>
                 </div>
                 <div class="page bg-white col border-radius px-4 py-4">
                     <h1 class="txt-bold">Advanced Details</h1>
+                    <div class="alert alert-warning mt-4" role="alert">
+                        <h4 class="alert-heading txt-md mb-2">Sample warning messages - alert</h4>
+                        <p class="txt-sm after-none color mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed fermentum felis. Aliquam erat volutpat. Donec faucibus mauris vel nibh sodales feugiat. Donec suscipit felis vitae orci porttitor congue    .</p>
+                      </div>
+                      <form>
+                        <div class="row">
+                            <div class="col">
+                            <label for="customRange1" class="form-label txt-sm">Height</label>
+                            <div class="d-flex align-items-center gap-3">
+                                <input type="range" class="form-range color-x" id="customRange1">
+                                <input type="text" class="form-control measure-indication rounded-4" value="160 cm" readonly="">
+                            </div>
+                            </div>
+                            <div class="col">
+                                <label for="customRange2" class="form-label txt-sm">Weight</label>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="range" class="form-range color-x" id="customRange2">
+                                    <input type="text" class="form-control measure-indication rounded-4" value="68 kg" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="colorInput" class="txt-sm">Choose color</label>
+                                <input type="color" id="colorInput" class="form-control height rounded-4" value="#CB5D9F">
+                            </div>
+                            <div class="col">
+                                <label class="txt-sm">Choose Templates </label>
+                            <div class="col">
+                            <div class="form-check form-check-inline col">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label txt-sm weight after-none" for="inlineCheckbox1">Template 1</label>
+                              </div>
+                              <div class="form-check form-check-inline col">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label txt-sm weight after-none" for="inlineCheckbox2">Template 2</label>
+                              </div>
+                              <div class="form-check form-check-inline col">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+                                <label class="form-check-label txt-sm weight after-none" for="inlineCheckbox3">Template 3</label>
+                              </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="text-less" class="form-label txt-sm">Qualifications</label>
+                            <div class="input-group mb-3">
+                                <input type="text" placeholder="enter qualifications" class="form-control rounded-4"
+                                    id="text-less" aria-describedby="basic-addon3" />
+                            </div>
+                        </div>
+                        <div class="row pb-3">
+                            <label for="floatingTextarea1" class="txt-sm">About Your Self</label>
+                            <div class="form-floating">
+                                <textarea class="form-control rounded-4 resize" placeholder="Text here" id="floatingTextarea1" style="height: 160px"></textarea>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <input class="form-check-input" type="checkbox" id="flexCheckChecked">
+                            <label for="flexCheckChecked" class="txt-sm weight after-none">I Accept Terms & Conditions</label>
+                        </div>
+                      </form>
+                </div>
+                <div class="page bg-white col-0 border-radius p-3 d-flex justify-content-end">
+                    <button type="button" class="btn btn-light clr-text small-btn light-clr-btn">Cancel</button>
+                    <button class="btn btn-primary padding rounded-4 button" type="submit">Save Changes</button>
                 </div>
             </div>
         </div>

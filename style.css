@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,h6,p{
 .img-upload{
     border:1px dashed #B2BAD0;
     /* padding:20px 222px; */
+    background-color: #FAFCFE;
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -54,6 +55,10 @@ input:focus{
     box-shadow: none !important;
     border:1px solid #4318FF !important;
 }
+textarea:focus{
+    box-shadow: none !important;
+    border:1px solid #4318FF !important;
+}
 .txt-sm::after {
     content: "*";
     color: red;
@@ -62,4 +67,59 @@ input:focus{
     font-size: 14px;
     font-weight: 500;
     margin-bottom: .5rem;
+}
+input::placeholder{
+    color: #949DB9 !important;
+}
+.after-none::after{
+    display: none;
+}
+.color{
+    color:#624E17;
+    font-weight: 400;
+}
+.measure-indication{
+    font-size: 12px;
+    font-weight: 700;
+    width: 75px;
+    height: 45px;
+    text-align: center;
+}
+/* WebKit (Chrome, Safari) */
+#customRange1::-webkit-slider-thumb {
+    background:  #4318FF;
+}
+/* Firefox */
+#customRange1::-moz-range-thumb {
+    background:  #4318FF;
+}
+/* Internet Explorer and Edge */
+#customRange1::-ms-thumb {
+    background:#4318FF;
+}
+input[type="radio"]:checked, 
+input[type="checkbox"]:checked {
+    background-color: #4318FF !important;
+}
+.weight{
+    font-weight: 400;
+}
+.height{
+    height: 45px;
+}
+.resize{
+    resize: none;
+}
+.button{
+    background-color: #4318FF;
+
+}
+.button:hover{
+    background-color: #4318FF;
+}
+.btn{
+    height:55px;
+    font-size: 15px;
+    font-weight: 700;
+    width:150px;
 }
