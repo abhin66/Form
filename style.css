@@ -7,7 +7,6 @@
 }
 h1,h2,h3,h4,h5,h6,p{
     margin-block-start:0px;
-    /* margin-block-end: 0px; */
     padding:0px;
 }
 .txt-bold{
@@ -113,6 +112,7 @@ input[type="checkbox"]:checked {
 }
 .button{
     background-color: #4318FF;
+    width:150px;
 
 }
 .button:hover{
@@ -122,5 +122,18 @@ input[type="checkbox"]:checked {
     height:55px;
     font-size: 15px;
     font-weight: 700;
-    width:150px;
+    padding:0px 10px 0px 10px; 
+}
+.btn-x{
+    width:100px;
+}
+@media (max-width:980px){
+    .main-content{
+        flex-direction: column;
+    }
+}
+@media (max-width:780px){
+    .col{
+        flex:0 0 auto;
+    }
 }
