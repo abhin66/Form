@@ -23,15 +23,11 @@ h1,h2,h3,h4,h5,h6,p{
     font-weight: 500;
     margin-block-end: 0px;
 }
-.page{
-    padding:0;  
-}
 .border-radius{
     border-radius: 22px;
 }
 .img-upload{
     border:1px dashed #B2BAD0;
-    /* padding:20px 222px; */
     background-color: #FAFCFE;
 }
 .material-symbols-outlined {
@@ -148,7 +144,7 @@ input[type="checkbox"]:checked {
     .col{
         flex:0 0 auto;
     }
-    .padding{
+    .spacing{
         padding-top:20px;
     }
 }
