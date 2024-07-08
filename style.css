@@ -30,13 +30,13 @@ h1,h2,h3,h4,h5,h6,p{
     border:1px dashed #B2BAD0;
     background-color: #FAFCFE;
 }
-/* .material-symbols-outlined {
+.material-symbols-outlined {
   font-variation-settings:
   'FILL' 1,
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
-} */
+}
 .img-upload span{
     color:#4318FF;
 }
