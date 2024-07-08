@@ -67,6 +67,12 @@ textarea:focus{
 input::placeholder{
     color: #949DB9 !important;
 }
+.form-select{
+    color: #2b3674 !important;;
+}
+input{
+    color:#2B3674;
+}
 .after-none::after{
     display: none;
 }
